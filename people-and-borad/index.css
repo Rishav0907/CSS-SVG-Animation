@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.svg-image{
+    height: 200px;
+    text-align: center;
+}
+#left-woman-hand-pic{
+    animation: leftWoman 1s infinite;
+}
+#up-hand-pic{
+    animation: upHand 1.5s infinite ease-in-out;
+    animation-delay: 1s;
+    transform-origin: top;
+}
+#icon1{
+    animation: icon 1s infinite ease-in-out;
+}
+#icon2{
+    animation: icon 1s infinite ease-in-out;
+    animation-delay: 1s;
+}
+#icon3{
+    animation: icon 1s infinite ease-in-out;
+    animation-delay: 2s;
+}
+@keyframes icon{
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(10deg);
+    }
+}
+@keyframes upHand{
+    from{
+        transform: rotateZ(-3deg);
+    }
+    to{
+        transform: rotateZ(3deg);
+    }
+}
+@keyframes leftWoman{
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(15deg);
+    }
+}
